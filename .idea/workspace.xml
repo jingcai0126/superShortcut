@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8eee3fe-2a36-4f63-a50c-7564e54d87c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Dual lens 11 .svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Dual lens X.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Dual lens.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Pro lens 11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Single lens XR.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Single lens se 2020.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/iMark/marks/Single lens.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/iMark/iMark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/iMark/iMark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/iMark/iMark.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/iMark/iMark.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/iMark/iMark.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/iMark/iMark.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +37,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iMark" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -74,7 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586138049777</updated>
       <workItem from="1586138051583" duration="21456000" />
-      <workItem from="1586223436429" duration="7191000" />
+      <workItem from="1586223436429" duration="7862000" />
+      <workItem from="1586232956640" duration="716000" />
     </task>
     <servers />
   </component>
@@ -90,6 +78,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="707" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586233498973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/235.1080.1366.728@0.0.1920.1040" timestamp="1586233498973" />
     <state x="593" y="295" width="734" height="484" key="EditFileWatcherDialog" timestamp="1586159388539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
