@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC
+        "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+     xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 512 512">
+
+    <g id="Layer 1">
+<g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="10"
+      d="M85+160C85+118.579+118.579+85+160+85C201.421+85+235+118.579+235+160C235+201.421+201.421+235+160+235C118.579+235+85+201.421+85+160Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+    <path class="fillColor" d="M100+160C100+126.863+126.863+100+160+100C193.137+100+220+126.863+220+160C220+193.137+193.137+220+160+220C126.863+220+100+193.137+100+160Z"
+          fill-opacity="0.997773" fill="#000000" opacity="1"/>
+</g>
+        <g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="10"
+      d="M85+352C85+310.579+118.579+277+160+277C201.421+277+235+310.579+235+352C235+393.421+201.421+427+160+427C118.579+427+85+393.421+85+352Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+            <path class="fillColor" d="M100+352C100+318.863+126.863+292+160+292C193.137+292+220+318.863+220+352C220+385.137+193.137+412+160+412C126.863+412+100+385.137+100+352Z"
+                  fill-opacity="0.997773" fill="#000000" opacity="1"/>
+</g>
+        <path class="strokeColor" stroke="#000000" stroke-width="10"
+              d="M151+56L361+56C413.467+56+456+98.5329+456+151L456+361C456+413.467+413.467+456+361+456L151+456C98.5329+456+56+413.467+56+361L56+151C56+98.5329+98.5329+56+151+56Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path class="strokeColor" stroke="#000000" stroke-width="5"
+              d="M322.5+112.5C322.5+97.3122+334.812+85+350+85C365.188+85+377.5+97.3122+377.5+112.5C377.5+127.688+365.188+140+350+140C334.812+140+322.5+127.688+322.5+112.5Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path class="fillColor" d="M340+395C340+389.477+344.477+385+350+385C355.523+385+360+389.477+360+395C360+400.523+355.523+405+350+405C344.477+405+340+400.523+340+395Z"
+              fill-opacity="0.997773" fill="#000000" opacity="1"/>
+        <g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="10"
+      d="M275+256C275+214.579+308.579+181+350+181C391.421+181+425+214.579+425+256C425+297.421+391.421+331+350+331C308.579+331+275+297.421+275+256Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+            <path class="fillColor" d="M290+256C290+222.863+316.863+196+350+196C383.137+196+410+222.863+410+256C410+289.137+383.137+316+350+316C316.863+316+290+289.137+290+256Z"
+                  fill-opacity="0.997773" fill="#000000" opacity="1"/>
+</g>
+</g>
+</svg>

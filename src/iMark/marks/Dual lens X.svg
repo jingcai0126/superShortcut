@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC
+        "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+     xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 512 512">
+
+    <g id="Layer 1">
+<path class="strokeColor" stroke="#000000" stroke-width="3"
+      d="M356+106C356+50.7716+311.229+6.00002+256+6C200.772+5.99997+156+50.7715+156+106L156+406C156+461.228+200.771+506+256+506C311.228+506+356+461.229+356+406L356+106Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path   class="strokeColor"  stroke="#000000" stroke-width="6"
+              d="M348.5+110.5C348.5+56.9284+307.086+13.5+256+13.5C204.914+13.5+163.5+56.9283+163.5+110.5L163.5+401.5C163.5+455.072+204.914+498.5+256+498.5C307.086+498.5+348.5+455.072+348.5+401.5L348.5+110.5Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path  class="strokeColor"  stroke="#000000" stroke-width="5"
+              d="M256+82C272.569+82+286+95.4315+286+112C286+128.569+272.569+142+256+142C239.431+142+226+128.569+226+112C226+95.4314+239.431+82+256+82Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path  class="strokeColor"  stroke="#000000" stroke-width="5"
+              d="M256+370C272.569+370+286+383.431+286+400C286+416.569+272.569+430+256+430C239.431+430+226+416.569+226+400C226+383.431+239.431+370+256+370Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path  class="strokeColor"  stroke="#000000" stroke-width="7"
+              d="M256+213.5C279.472+213.5+298.5+232.528+298.5+256C298.5+279.472+279.472+298.5+256+298.5C232.528+298.5+213.5+279.472+213.5+256C213.5+232.528+232.528+213.5+256+213.5Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path  class="strokeColor"  stroke="#000000" stroke-width="2"
+              d="M295+307.5C295+303.358+298.358+300+302.5+300C306.642+300+310+303.358+310+307.5C310+311.642+306.642+315+302.5+315C298.358+315+295+311.642+295+307.5Z"
+              fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>

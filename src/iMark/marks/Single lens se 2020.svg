@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC
+        "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+     xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 512 512">
+
+    <g id="Layer 1">
+<g opacity="1">
+<g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="10"
+      d="M81+256C81+200.772+125.772+156+181+156C236.228+156+281+200.772+281+256C281+311.228+236.228+356+181+356C125.772+356+81+311.228+81+256Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+    <path  class="strokeColor"  stroke="#000000" stroke-width="6"
+          d="M93.5+256C93.5+207.675+132.675+168.5+181+168.5C229.325+168.5+268.5+207.675+268.5+256C268.5+304.325+229.325+343.5+181+343.5C132.675+343.5+93.5+304.325+93.5+256Z"
+          fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+    <g opacity="1">
+<path  class="strokeColor"  stroke="#000000" stroke-width="3"
+      d="M387.25+256C387.25+243.919+397.044+234.125+409.125+234.125C421.206+234.125+431+243.919+431+256C431+268.081+421.206+277.875+409.125+277.875C397.044+277.875+387.25+268.081+387.25+256Z"
+      fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+        <path class="fillColor" d="M331+256C331+252.548+333.798+249.75+337.25+249.75C340.702+249.75+343.5+252.548+343.5+256C343.5+259.452+340.702+262.25+337.25+262.25C333.798+262.25+331+259.452+331+256Z"
+              fill-opacity="0.997773" fill="#000000" opacity="1"/>
+</g>
+</g>
+</g>
+</svg>

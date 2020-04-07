@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC
+        "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+     xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 512 512">
+    <g id="Layer 1">
+<g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="12"
+      d="M118.5+187.5C118.5+111.561+180.061+50+256+50C331.939+50+393.5+111.561+393.5+187.5C393.5+263.439+331.939+325+256+325C180.061+325+118.5+263.439+118.5+187.5Z"
+      fill="#64b5f6" stroke-linecap="round" fill-opacity="0.00668151" opacity="1" stroke-linejoin="round"/>
+    <path class="strokeColor" stroke="#000000" stroke-width="5"
+          d="M130.777+187.254C130.777+118.096+186.841+62.0313+256+62.0313C325.159+62.0313+381.223+118.096+381.223+187.254C381.223+256.413+325.159+312.478+256+312.478C186.841+312.478+130.777+256.413+130.777+187.254Z"
+          fill="#64b5f6" stroke-linecap="round" fill-opacity="0.00668151" opacity="1" stroke-linejoin="round"/>
+</g>
+        <path class="strokeColor" stroke="#000000" stroke-width="3"
+              d="M262+406C262+409.314+259.314+412+256+412C252.686+412+250+409.314+250+406C250+402.686+252.686+400+256+400C259.314+400+262+402.686+262+406Z"
+              fill="#64b5f6" stroke-linecap="round" fill-opacity="0.00668151" opacity="1" stroke-linejoin="round"/>
+        <g opacity="1">
+<path class="strokeColor" stroke="#000000" stroke-width="3"
+      d="M243.5+449.501C243.5+442.597+249.096+437+256+437C262.904+437+268.5+442.597+268.5+449.501C268.5+456.404+262.904+462+256+462C249.096+462+243.5+456.404+243.5+449.501Z"
+      fill="#64b5f6" stroke-linecap="round" fill-opacity="0.00668151" opacity="1" stroke-linejoin="round"/>
+            <path class="strokeColor" stroke="#000000" stroke-width="1"
+                  d="M246.625+449.501C246.625+444.323+250.822+440.125+256+440.125C261.178+440.125+265.375+444.323+265.375+449.501C265.375+454.678+261.178+458.875+256+458.875C250.822+458.875+246.625+454.678+246.625+449.501Z"
+                  fill="#64b5f6" stroke-linecap="round" fill-opacity="0.00668151" opacity="1" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
