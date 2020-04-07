@@ -2,10 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script type="module" src="src/app.js"></script>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script src="node_modules/d3/dist/d3.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+        require([
+            "src/iMark/iMark"
+        ], function () {
+            let iMark = new IMark();
+            iMark.mark('#iMark',function (url) {
+                if (url)
+                    $('#iMarkPreview').attr('src', url);
+            });
+            let devices = iMark.getDevices();
+            let fonts = iMark.getFonts();
+            let $iMarkDeviceSelect = $('#iMarkDeviceSelect');
+            let $iMarkFontSelect = $('#iMarkFontSelect');
+            let deviceEle = '', fontsEle;
+            devices.forEach((d) => {
+                deviceEle += '<option value="' + d + '">' + d + '</option>'
+            });
+            fonts.forEach((d) => {
+                fontsEle += '<option value="' + d + '">' + d + '</option>'
+            });
+            $iMarkDeviceSelect.html(deviceEle);
+            $iMarkFontSelect.html(fontsEle);
+            $('#createIMark').click(function () {
+                iMark.setDevice("" + $iMarkDeviceSelect.val())
+                    .setFont("" + $iMarkFontSelect.val())
+                    .setColor($('#iMarkColor').val())
+                    .setDebug($('#iMarkDebug').is(':checked'))
+                    .setMarkRight($('#iMarkRight').is(':checked'))
+                    .setSloganScaling($('#iMarkSloganScaling').is(':checked'))
+                    .mark('#iMark', function (url) {
+                        if (url)
+                            $('#iMarkPreview').attr('src', url);
+                    });
+            });
+        })
+    </script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .demo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow:10px 10px 5px #aaa;
+            border-radius: 15px;
+        }
+        header{
+            background-color: #ddd;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px 15px 0 0;
+        }
+        header h2{
+            text-align: center;
+        }
+        .demoShow{
+            max-width: 480px;
+            padding: 10px;
+            background-color:#eee;
+            border-radius:  0 0 15px 15px;
+        }
+        img{
+            width: 100%;
+        }
+        #iMark{
+            overflow: auto;
+        }
+    </style>
 </head>
 <body>
+<div class="demo">
+    <header><h2>iMark</h2></header>
+    <div class="demoShow">
+        <img id="iMarkPreview" src="#" alt="preview">
+        <br>
+        <label>Device:<select id="iMarkDeviceSelect" aria-label="iMark device select"></select></label>
+        <br>
+        <label>Font:<select id="iMarkFontSelect" aria-label="iMark font"></select></label>
+        <br>
+        <label>Mark Color:<input id="iMarkColor" type="color" aria-label="iMark color set"></label>
+        <br>
+        <label>Debug:<input id="iMarkDebug" type="checkbox" aria-label="iMark debug showing"></label>
+        <br>
+        <label>MarkRight:<input id="iMarkRight" type="checkbox" aria-label="iMark Mark right"></label>
+        <br>
+        <label>Slogan Scaling:<input id="iMarkSloganScaling" type="checkbox" aria-label="iMark Slogan scaling"></label>
+        <br>
+        <button id="createIMark">Create Mark</button>
+        <div id="iMark"></div>
+    </div>
+</div>
 
 </body>
 </html>
+
