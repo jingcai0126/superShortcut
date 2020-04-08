@@ -9,10 +9,10 @@
     <script src="node_modules/requirejs/require.js"></script>
     <script>
         require([
-            "src/iMark/iMark"
+            "app/iMark/iMark"
         ], function () {
             let iMark = new IMark();
-            iMark.mark('#iMark',function (url) {
+            iMark.mark('#iMark', function (url) {
                 if (url)
                     $('#iMarkPreview').attr('src', url);
             });
@@ -41,41 +41,137 @@
                             $('#iMarkPreview').attr('src', url);
                     });
             });
+        });
+        require([
+            "app/iMockup/iMockup",
+            "app/svg2png/svg2png"
+        ], function () {
+            let iMockup = new IMockup();
+
+            let $deviceSelect = $('#iMockupDeviceSelect');
+            let $styleSelect = $('#iMockupStyleSelect');
+            let $modelSelect = $('#iMockupModelSelect');
+            let $screenColor = $('#iMockupScreenColor');
+            let imgPath = undefined;
+            let deviceEle = '', styleEle = '';
+
+            for (let device in MockDevices) {
+                deviceEle += "<option value='" + device + "'>" + MockDevices[device] + "</option>";
+            }
+            for (let style in MockType) {
+                styleEle += "<option value='" + style + "'>" + MockType[style] + "</option>";
+            }
+
+            $deviceSelect.html(deviceEle);
+            $styleSelect.html(styleEle);
+            setModel();
+            $deviceSelect.change(function () {
+                setModel();
+            });
+            $styleSelect.change(function () {
+                setModel();
+            });
+            $modelSelect.change(function () {
+                mockup();
+            });
+            $screenColor.change(function () {
+                mockup();
+            });
+            $('#iMockupImgFile').change(function (event) {
+                imgPath = URL.createObjectURL(event.target.files[0]);
+                mockup();
+            });
+            $('#iMockupDownloadImg').click(function () {
+                svg2png(document.getElementById('iMockupSVG'), $('#iMockupDownloadSize').val(), function (dataURL) {
+                    let link = document.createElement('a');
+                    link.href = dataURL;
+                    link.download = 'iMockup.png';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+            });
+
+            function setModel() {
+                let models = iMockup.getModels(
+                    MockDevices[$deviceSelect.val()],
+                    MockType[$styleSelect.val()]
+                );
+                let modelEle = '';
+                models.forEach(function (model) {
+                    modelEle += "<option value='" + model + "'>" + model + "</option>"
+                });
+                $modelSelect.html(modelEle);
+                mockup()
+            }
+
+            function mockup() {
+                iMockup.setScreenColor("" + $screenColor.val())
+                    .setDevice(
+                        MockDevices[$deviceSelect.val()],
+                        MockType[$styleSelect.val()],
+                        "" + $modelSelect.val()
+                    )
+                    .mockup(
+                        '#iMockup',
+                        imgPath
+                    );
+            }
         })
     </script>
     <style>
-        body{
+        body {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: start;
         }
-        .demo{
+
+        .demo {
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow:10px 10px 5px #aaa;
+            box-shadow: 10px 10px 5px #aaa;
             border-radius: 15px;
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
         }
-        header{
+
+        header {
             background-color: #ddd;
             width: 100%;
             max-width: 500px;
             border-radius: 15px 15px 0 0;
         }
-        header h2{
+
+        header h2 {
             text-align: center;
         }
-        .demoShow{
-            max-width: 480px;
-            padding: 10px;
-            background-color:#eee;
-            border-radius:  0 0 15px 15px;
-        }
-        img{
+
+        .demoShow {
+            max-width: 500px;
+            background-color: #eee;
+            border-radius: 0 0 15px 15px;
             width: 100%;
         }
-        #iMark{
+
+        img {
+            width: 100%;
+        }
+
+        #iMark {
             overflow: auto;
+        }
+
+        #iMockupParent {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #iMockup {
+            width: 250px;
+            height: 250px;
         }
     </style>
 </head>
@@ -101,7 +197,26 @@
         <div id="iMark"></div>
     </div>
 </div>
-
+<div class="demo">
+    <header><h2>iMockup</h2></header>
+    <div class="demoShow">
+        <label>Device:<select id="iMockupDeviceSelect"></select></label>
+        <br>
+        <label>Style:<select id="iMockupStyleSelect"></select></label>
+        <br>
+        <label>Model:<select id="iMockupModelSelect"></select></label>
+        <br>
+        <label>Screen Color:<input id="iMockupScreenColor" type="color"></label>
+        <br>
+        <label>Update file:<input id="iMockupImgFile" type="file" accept="image/*"></label>
+        <br>
+        <label>Download maximum frame length:<select id="iMockupDownloadSize"><option value="2048">2048</option><option value="1024">1024</option><option value="512">512</option></select></label>
+        <button id="iMockupDownloadImg">Download image</button>
+        <div id="iMockupParent">
+            <div id="iMockup"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 
