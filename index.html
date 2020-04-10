@@ -117,14 +117,30 @@
                         imgPath
                     );
             }
+        });
+        require(["app/iBatteryLife/iBatteryLife"], function () {
+            let iBatteryLife = new IBatteryLife();
+
+            iBatteryLife
+                .setBatteryInfo(88, 8557, 8453)
+                .setTextIntro('電池減少壽命', '電池剩餘壽命', '充電次數')
+                .setColors(["green", 'blue'])
+                .setDebug(false)
+                .showChart('#iBatteryLife', function (url) {
+                    if (url)
+                        $('#iBatteryLifePreview').attr('src', url);
+                })
         })
     </script>
     <style>
+        @import url('https://cdn.jsdelivr.net/npm/taipei-sans-tc/dist/Bold/TaipeiSansTCBeta-Bold.css');
+
         body {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: start;
+            font-family: 'TaipeiSansTCBeta-Bold', sans-serif;
         }
 
         .demo {
@@ -154,6 +170,13 @@
             background-color: #eee;
             border-radius: 0 0 15px 15px;
             width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .labels {
+            margin: 15px;
         }
 
         img {
@@ -179,43 +202,62 @@
 <div class="demo">
     <header><h2>iMark</h2></header>
     <div class="demoShow">
+
         <img id="iMarkPreview" src="#" alt="preview">
-        <br>
-        <label>Device:<select id="iMarkDeviceSelect" aria-label="iMark device select"></select></label>
-        <br>
-        <label>Font:<select id="iMarkFontSelect" aria-label="iMark font"></select></label>
-        <br>
-        <label>Mark Color:<input id="iMarkColor" type="color" aria-label="iMark color set"></label>
-        <br>
-        <label>Debug:<input id="iMarkDebug" type="checkbox" aria-label="iMark debug showing"></label>
-        <br>
-        <label>MarkRight:<input id="iMarkRight" type="checkbox" aria-label="iMark Mark right"></label>
-        <br>
-        <label>Slogan Scaling:<input id="iMarkSloganScaling" type="checkbox" aria-label="iMark Slogan scaling"></label>
-        <br>
-        <button id="createIMark">Create Mark</button>
+        <div class="labels">
+            <label>Device:<select id="iMarkDeviceSelect" aria-label="iMark device select"></select></label>
+            <br>
+            <label>Font:<select id="iMarkFontSelect" aria-label="iMark font"></select></label>
+            <br>
+            <label>Mark Color:<input id="iMarkColor" type="color" aria-label="iMark color set"></label>
+            <br>
+            <label>MarkRight:<input id="iMarkRight" type="checkbox" aria-label="iMark Mark right"></label>
+            <br>
+            <label>Slogan Scaling:<input id="iMarkSloganScaling" type="checkbox"
+                                         aria-label="iMark Slogan scaling"></label>
+            <label>Debug:<input id="iMarkDebug" type="checkbox" aria-label="iMark debug showing"></label>
+            <br>
+            <br>
+            <button id="createIMark">Create Mark</button>
+        </div>
         <div id="iMark"></div>
     </div>
 </div>
 <div class="demo">
     <header><h2>iMockup</h2></header>
     <div class="demoShow">
-        <label>Device:<select id="iMockupDeviceSelect"></select></label>
-        <br>
-        <label>Style:<select id="iMockupStyleSelect"></select></label>
-        <br>
-        <label>Model:<select id="iMockupModelSelect"></select></label>
-        <br>
-        <label>Screen Color:<input id="iMockupScreenColor" type="color"></label>
-        <br>
-        <label>Update file:<input id="iMockupImgFile" type="file" accept="image/*"></label>
-        <br>
-        <label>Download maximum frame length:<select id="iMockupDownloadSize"><option value="2048">2048</option><option value="1024">1024</option><option value="512">512</option></select></label>
-        <button id="iMockupDownloadImg">Download image</button>
         <div id="iMockupParent">
             <div id="iMockup"></div>
         </div>
+        <div class="labels">
+            <label>Device:<select id="iMockupDeviceSelect"></select></label>
+            <br>
+            <label>Style:<select id="iMockupStyleSelect"></select></label>
+            <br>
+            <label>Model:<select id="iMockupModelSelect"></select></label>
+            <br>
+            <label>Screen Color:<input id="iMockupScreenColor" type="color"></label>
+            <br>
+            <label>Update file:<input id="iMockupImgFile" type="file" accept="image/*"></label>
+            <br>
+            <label>Download maximum frame length:<select id="iMockupDownloadSize">
+                <option value="2048">2048</option>
+                <option value="1024">1024</option>
+                <option value="512">512</option>
+            </select></label>
+            <button id="iMockupDownloadImg">Download image</button>
+        </div>
     </div>
+</div>
+<div class="demo">
+    <header><h2>iBatteryLife</h2></header>
+    <div class="demoShow">
+
+        <div id="iBatteryLifePreviewBox" style="width: 250px">
+            <img id="iBatteryLifePreview" src="#" alt="iBatteryLife preview">
+        </div>
+    </div>
+    <div id="iBatteryLife"></div>
 </div>
 </body>
 </html>
