@@ -1,7 +1,7 @@
 # superShortcut
  iOS super shortcut
  ## Demo
- [link](https://zhaimick.github.io/superShortcut/)
+ [link](https://zhaimick.github.io/superShortcut/demo.html)
 ------
 
 ## iBatteryLife
