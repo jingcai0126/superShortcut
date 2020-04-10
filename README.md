@@ -1,6 +1,7 @@
 # superShortcut
  iOS super shortcut
-
+ ## Demo
+ [link](https://zhaimick.github.io/superShortcut/)
 ------
 
 ## iBatteryLife
@@ -115,4 +116,3 @@ Why I Create this function because  in `iMockup` if input Image to svg and creat
   | ------------------------------------------------------------ | ------------------------------------------------------------ |
   | `svg2png(svg: HTMLElement, size: number, callback: { (imgURL?: string): void })` | `svg` need to use `HTMLElement` <br>`size` means you can set the length of the maximum border<br>`callback` will return base64 URL |
 
-  
