@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <script src="node_modules/d3/dist/d3.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/requirejs/require.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app/iMark/iMark.js"></script>
+    <script src="app/iMockup/iMockup.js"></script>
+    <script src="app/svg2png/svg2png.js"></script>
+    <script src="app/iBatteryLife/iBatteryLife.js"></script>
     <script>
-        require([
-            "app/iMark/iMark"
-        ], function () {
+        function iMark() {
             let iMark = new IMark();
             iMark.mark('#iMark', function (url) {
                 if (url)
@@ -41,11 +42,8 @@
                             $('#iMarkPreview').attr('src', url);
                     });
             });
-        });
-        require([
-            "app/iMockup/iMockup",
-            "app/svg2png/svg2png"
-        ], function () {
+        }
+        function iMockup() {
             let iMockup = new IMockup();
 
             let $deviceSelect = $('#iMockupDeviceSelect');
@@ -117,8 +115,8 @@
                         imgPath
                     );
             }
-        });
-        require(["app/iBatteryLife/iBatteryLife"], function () {
+        }
+        function iBatteryLife() {
             let iBatteryLife = new IBatteryLife();
 
             iBatteryLife
@@ -130,7 +128,12 @@
                     if (url)
                         $('#iBatteryLifePreview').attr('src', url);
                 })
-        })
+        }
+        $(function () {
+            iMark();
+            iMockup();
+            iBatteryLife();
+        });
     </script>
     <style>
         @import url('https://cdn.jsdelivr.net/npm/taipei-sans-tc/dist/Bold/TaipeiSansTCBeta-Bold.css');
