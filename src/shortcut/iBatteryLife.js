@@ -59,7 +59,7 @@ fillLan();
 let iBatteryLife = new IBatteryLife();
 let createChart = function (){
     iBatteryLife
-        .setBatteryInfo(0, 9487, 9000)
+        .setBatteryInfo(chargeT, designC, actualC)
         .setTextIntro(textLib[1][$selectLan.val()],textLib[0][$selectLan.val()],textLib[2][$selectLan.val()])
         .showChart('#iBatteryLife', function (url) {
             if (url)
