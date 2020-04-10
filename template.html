@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Template</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/taipei-sans-tc/dist/Bold/TaipeiSansTCBeta-Bold.css');
+
+        body {
+            margin: 0;
+            font-family: 'TaipeiSansTCBeta-Bold', sans-serif;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header {
+            background-color: #455A64;
+            height: 64px;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            box-shadow: 0 2px 10px 2px #aaa;
+            z-index: 999;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+        header h2 {
+            color: white;
+            margin: 5px;
+        }
+        main{
+            margin-top: 64px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 100%;
+            max-width: 500px;
+        }
+        footer{
+            background-color: #455A64;
+            height: 50px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 100%;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+            z-index: 999;
+        }
+        footer a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        footer span{
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a id="headerIconLink" href="https://github.com/zhaiMick/"><img src="src/img/Logo%20White.png" alt="logo"></a>
+    <h2 id="headerTitle">App</h2>
+</header>
+<main>
+
+</main>
+<footer>
+    <a href="https://github.com/zhaiMick/">
+        <img src="src/img/github.svg" height="40"
+             alt="github">
+        <span>Design by zhaiMick</span>
+    </a>
+</footer>
+</body>
+</html>
