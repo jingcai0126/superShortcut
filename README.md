@@ -12,7 +12,7 @@ Create donut chart to show iOS battery life.
 * ### example
 
   ```html
-  <script src"https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"=></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
   <script src="app/iBatteryLife/iBatterLife.js"></script>
   <script>
   let iBatteryLife = new IBatteryLife();
@@ -42,7 +42,7 @@ Create watermark.
 * ### example
 
   ```html
-  <script src"https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"=></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
   <script src="app/iMark/iMark.js"></script>
   <script>
   let iMark = new IMark();
@@ -73,7 +73,7 @@ Create mockup.
 * ### example
 
   ```html
-  <script src"https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"=></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
   <script src="app/iMockup/iMockup.js"></script>
   <script>
   let iMockup = new IMockup();
