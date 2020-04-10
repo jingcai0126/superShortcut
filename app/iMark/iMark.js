@@ -84,9 +84,6 @@ class IMark {
             .append('div')
             .attr('id', 'iMark_div');
         let svg = svgP.append('svg').attr('id', 'imark_svg');
-        if (!this.debug) {
-            svgP.style('visibility', 'hidden');
-        }
         // set mark URL
         let markURL = '';
         let slogan = 'Apple iSight Camera';
@@ -197,10 +194,6 @@ class IMark {
             }
             svg.attr('width', (markSize + shotTextWidth + 25));
             svg.attr('viewBox', '0 0 ' + (markSize + shotTextWidth + 25) + ' ' + markSize); // set ViewBox
-            // if not debug set svg width height 0
-            if (!debug) {
-                svg.style('width', 0).style('height', 0);
-            }
             // return base64
             let baseCallback = function (imgURL) {
                 if (callback)
@@ -223,6 +216,14 @@ class IMark {
             }
             else {
                 baseCallback(undefined);
+            }
+            // if not debug delete create svg
+            if (!debug) {
+                d3.select(selector).style('height', 0);
+                d3.select(selector).selectAll('*').remove();
+            }
+            else {
+                d3.select(selector).style('height', null);
             }
         });
     }
