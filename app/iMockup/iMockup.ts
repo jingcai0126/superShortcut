@@ -224,11 +224,12 @@ class IMockup {
 
         let devices = this.getModels(this.device, this.mockType);
         let index = devices.indexOf(this.model);
+        let body = d3.select(selector);
+        body.selectAll('*').remove();
+
         if (index == -1)
             throw "Can't find model";
 
-        let body = d3.select(selector);
-        body.selectAll('*').remove();
         if (!imgURL) {
             imgURL = 'src/img/apple.jpg';
         }
