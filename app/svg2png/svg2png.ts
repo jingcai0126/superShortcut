@@ -1,54 +1,46 @@
 function svg2png(svg: HTMLElement, size: number, callback: { (imgURL?: string): void }) {
     let xlinkNS = "http://www.w3.org/1999/xlink";
     let total = 0, encoded = 0;
-    // convert an external bitmap image to a dataURL
+    
     let toDataURL = function (image: any) {
 
         let img = new Image();
-        // CORS workaround, this won't work in IE<11
-        // If you are sure you don't need it, remove the next line and the double onerror handler
-        // First try with crossorigin set, it should fire an error if not needed
+
         img.crossOrigin = 'anonymous';
 
         img.onload = function () {
-            // we should now be able to draw it without tainting the canvas
             let canvas = document.createElement('canvas');
             canvas.width = img.width;
             canvas.height = img.height;
-            // draw the loaded image
+
             canvas.getContext('2d')!.drawImage(img, 0, 0);
-            // set our <image>'s href attribute to the dataURL of our canvas
+
             image.setAttributeNS(xlinkNS, 'href', canvas.toDataURL());
-            // that was the last one
+
             if (++encoded === total) exportDoc(size);
         };
 
-        // No CORS set in the response
         img.onerror = function () {
-            // save the src
             let oldSrc = this.src;
-            // there is an other problem
             this.onerror = function () {
                 console.warn('failed to load an image at : ', this.src);
                 if (--total === encoded && encoded > 0) exportDoc(size);
             };
-            // remove the crossorigin attribute
+
             this.removeAttribute('crossorigin');
-            // retry
+
             this.src = '';
             this.src = oldSrc;
         };
-        // load our external image into our img
+
         let href = image.getAttributeNS(xlinkNS, 'href');
-        // really weird bug that appeared since this answer was first posted
-        // we need to force a no-cached request for the crossOrigin be applied
 
         // img.src = href + (href.indexOf('?') > -1 ? +'&1' : '?1');  //more then 1
 
         img.src = href;
     };
 
-    // get an external svg doc to data String
+
     let parseFromUrl = function (url: string, element: any) {
         let xhr = new XMLHttpRequest();
         xhr.onload = function () {
@@ -58,7 +50,7 @@ function svg2png(svg: HTMLElement, size: number, callback: { (imgURL?: string): 
                 element.setAttributeNS(xlinkNS, 'href', dataUrl);
                 if (++encoded === total) exportDoc(size);
             }
-            // request failed with xhr, try as an <img>
+
             else {
                 toDataURL(element);
             }
@@ -74,22 +66,22 @@ function svg2png(svg: HTMLElement, size: number, callback: { (imgURL?: string): 
     total = images.length;
     encoded = 0;
 
-    // loop through all our <images> elements
+
     for (let i = 0; i < images.length; i++) {
         let href = images[i].getAttributeNS(xlinkNS, 'href')!;
-        // check if the image is external
+
         if (href.indexOf('data:image') < 0) {
-            // if it points to another svg element
+
             if (href.indexOf('.svg') > 0) {
                 parseFromUrl(href, images[i]);
-            } else // a pixel image
+            } else
                 toDataURL(images[i]);
         }
-        // else increment our counter
+
         else if (++encoded === total)
             exportDoc(size);
     }
-    // if there were no <image> element
+
     if (total === 0)
         exportDoc(size);
 
