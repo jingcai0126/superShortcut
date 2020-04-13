@@ -18,7 +18,7 @@ Create donut chart to show iOS battery life.
   let iBatteryLife = new IBatteryLife();
   iBatterLife.setBatteryInfo(100, 9000, 8500) // chargeTime designCapacity actualCapacity
   	.showChart('#iBatterLife',function(url){ // it will reply base64 URL
-      	//do domething
+      	//do something
   	});
   </script>
   ```
