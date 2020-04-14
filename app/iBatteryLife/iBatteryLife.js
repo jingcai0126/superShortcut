@@ -55,9 +55,9 @@ class IBatteryLife {
         if (this.actualCapacity < 0) {
             throw "Need set actualCapacity > 0";
         }
-        if (this.designCapacity < this.actualCapacity) {
-            throw 'Check your set your [designCapacity:' + this.designCapacity + '] is more than the [actualCapacity:' + this.actualCapacity + ']';
-        }
+        // if (this.designCapacity < this.actualCapacity) {
+        //     throw  'Check your set your [designCapacity:' + this.designCapacity + '] is more than the [actualCapacity:' + this.actualCapacity + ']'
+        // }
         let dataset = [this.actualCapacity, this.designCapacity - this.actualCapacity];
         let intro = [this.textIntro.remaining, this.textIntro.reduced, this.textIntro.chargeTimes];
         let svg = d3.select(selector)
@@ -102,7 +102,7 @@ class IBatteryLife {
             let t = texts.append('text')
                 .attr('fill', textColor)
                 .text(str)
-                .style('font-size', '13px')
+                .style('font-size', '12px')
                 .style('font-weight', 'bold');
             let w = t.node().getBoundingClientRect().width;
             let h = t.node().getBoundingClientRect().height;
@@ -135,6 +135,12 @@ class IBatteryLife {
             .text(function (d, i) {
             return intro[i];
         });
+        let dateF = d3.timeFormat('%Y-%m-%d');
+        let dateT = svg.append('text')
+            .attr('fill', textColor)
+            .style('font-size', '9px')
+            .text(dateF(new Date()));
+        dateT.attr('transform', 'translate(' + (size - dateT.node().getBoundingClientRect().width) + ',' + (size + 50) + ')');
         // return base64
         let baseCallback = function (imgURL) {
             if (callback)
