@@ -150,7 +150,7 @@ class IBatteryLife {
             .attr('fill', textColor)
             .style('font-size','9px')
             .text(dateF(new Date()));
-        dateT.attr('transform','translate('+(size-dateT.node()!.getBoundingClientRect().width)+','+(size +50)+')');
+        dateT.attr('transform','translate('+(size-dateT.node()!.getBoundingClientRect().width)+','+(size + 49)+')');
         // return base64
         let baseCallback = function (imgURL?: string) {
             if (callback)
