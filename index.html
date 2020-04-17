@@ -96,7 +96,7 @@
      style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:1000;width:100%;height:100%;display:none;">
     <div id="innerdiv"
          style="width:100%; height:100%;position:absolute; display: flex;justify-content: center;align-items: center">
-        <img id="bigimg" src="" alt="" style="max-width: 500px;"/>
+        <img id="bigimg" src="" alt=""/>
     </div>
 </div>
 </body>
@@ -105,23 +105,28 @@
     let shortcuts = [
         {
             name: 'iBatteryLife',
-            image: 'src/img/iBatteryLife.svg',
+            image: 'src/img/iBatteryLife icon.png',
             link: 'https://www.icloud.com/shortcuts/e00d61c30e9e43dda51679d0011d3677',
             view_img: ["src/img/iBatteryLife.png", "src/img/iBatteryLife (1).png", "src/img/iBatteryLife (2).png", "src/img/iBatteryLife (3).png"]
         },
-
+        {
+            name: 'iMark',
+            image: 'src/img/iMark icon.png',
+            link: 'https://www.icloud.com/shortcuts/4a6209b50e604acc8b8a9bbfad565046',
+            view_img: ["src/img/iMark (1).png", "src/img/iMark (2).png"]
+        }
     ];
     let $main = $('main');
     let $div = $('<div style="display:grid; grid-template-columns: repeat(4, 1fr); margin: 10px 0"/>');
     shortcuts.forEach(function (obj, i) {
-        $div.append('<div style="display: flex;justify-content: center"><img src="' + obj.image + '" alt="shortcut icon" width="50px"></div>');
+        $div.append('<div style="display: flex;justify-content: center;margin: 5px;"><img src="' + obj.image + '" alt="shortcut icon" width="50px"></div>');
         $div.append('<div style="display: flex;align-items: center"><b>' + obj.name + '</b></div>');
         $div.append('<div style="display: flex;align-items: center"><a href="' + obj.link + '">Download link</a> </div>');
         $div.append('<div style="display: flex;align-items: center;justify-content: center;"><img src="src/img/showMore.svg" alt="show more" width="40px" data-index="' + i + '" class="showMore"></div>');
         let $uiP = $('<div  style="grid-column-start:1;grid-column-end: 5; display: none" id="uiPreview-' + i + '"/>');
         let $uiPreview = $('<div style="display: flex;overflow: auto;"/>');
         obj.view_img.forEach(function (img) {
-            $uiPreview.append('<img src="' + img + '" alt="ui-preview" class="ui-preview" width="150" style="margin: 5px;">');
+            $uiPreview.append('<img src="' + img + '" alt="ui-preview" class="ui-preview" height="250" style="margin: 5px;">');
         });
         $uiP.append($uiPreview);
         $div.append($uiP);
@@ -132,23 +137,20 @@
         $(id).slideToggle();
     });
     $('.ui-preview').on('click', function () {
-        let windowHeight = $(window).height();
-        let windowWidth = $(window).width();
         let src = $(this).attr('src');
-        let bigImg = $('#bigimg');
 
+        let bigImg = $('#bigimg');
         bigImg.attr('src', src);
-        bigImg.css('width', windowWidth * 0.8);
+
         $('#outerdiv').fadeIn('fast');
 
-
-        let imgHeight = bigImg.height();
-        console.log(windowHeight, imgHeight);
-        if (imgHeight > windowHeight) {
-            let scale = windowHeight / imgHeight * 0.8;
-            bigImg.css('zoom', scale);
+        let windowHeight = $(window).height();
+        let windowWidth = $(window).width();
+        if (windowWidth > windowHeight) {
+            bigImg.css('max-height', windowHeight * .8);
+        } else {
+            bigImg.css('max-width', windowWidth * .8);
         }
-
     });
 
     $('#outerdiv').on('click', function () {
