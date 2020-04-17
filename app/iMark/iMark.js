@@ -96,33 +96,33 @@ class IMark {
             case this.devices[5]:
             case this.devices[6]:
             case this.devices[8]:
-                markURL = 'app/iMark/marks/Single lens.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Single lens.svg';
                 break;
             case this.devices[7]:
             case this.devices[9]:
-                markURL = 'app/iMark/marks/Dual lens.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Dual lens.svg';
                 slogan = 'Apple Dual Camera System';
                 break;
             case this.devices[10]:
             case this.devices[11]:
             case this.devices[13]:
-                markURL = 'app/iMark/marks/Dual lens X.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Dual lens X.svg';
                 slogan = 'Apple Dual Camera System';
                 break;
             case this.devices[12]:
-                markURL = 'app/iMark/marks/Single lens XR.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Single lens XR.svg';
                 break;
             case this.devices[14]:
-                markURL = 'app/iMark/marks/Dual lens 11 .svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Dual lens 11 .svg';
                 slogan = 'Apple Dual Camera System';
                 break;
             case this.devices[15]:
             case this.devices[16]:
-                markURL = 'app/iMark/marks/Pro lens 11.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Pro lens 11.svg';
                 slogan = 'Apple Pro Camera System';
                 break;
             case this.devices[17]:
-                markURL = 'app/iMark/marks/Single lens se 2020.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Single lens se 2020.svg';
                 break;
             default:
                 throw 'Not find device';
