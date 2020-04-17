@@ -35,7 +35,7 @@ class IMark {
         'iPhone 11',
         'iPhone 11 Pro',
         'iPhone 11 Pro Max',
-        'iPhone SE 2020'
+        'iPhone SE 2'
     ];
     private fonts = [
         'TaipeiSansTCBeta-Bold',
