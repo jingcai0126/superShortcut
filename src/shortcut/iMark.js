@@ -210,7 +210,7 @@ let compositePicture = function (imgURL, markURL, callback) {
  * 產生圖片預覽 以及控制
  * */
 createMark();
-
+$('#headerTitle').html('iMark');
 $('.iMarkSetting').on('change', function () {
     createMark()
 });
