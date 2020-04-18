@@ -1,7 +1,7 @@
 /**
  * Language setting
  */
-let supportedLanguage = ["zh", "en"];
+let supportedLanguages = ["zh", "en"];
 let text_lib = {
     'normal-setting': {
         "zh": "一般設定: ",
@@ -82,7 +82,7 @@ let text_lib = {
 };
 
 let $selectLan = $('#lanSelect');
-supportedLanguage.forEach(function (language) {
+supportedLanguages.forEach(function (language) {
     let $opt = $('<option/>');
     $opt.val(language).text(language);
     $selectLan.append($opt);
