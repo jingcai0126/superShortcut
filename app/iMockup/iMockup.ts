@@ -238,164 +238,163 @@ class IMockup {
             case MockType.flat:
                 switch (this.model) {
                     case 'iPhone X & XS Gold':
-                        //app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Gold.svg
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Gold.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 41.1, 45, 1125, 2436);
                         break;
                     case 'iPhone X & XS Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Silver.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 41.1, 45, 1125, 2436);
                         break;
                     case 'iPhone X & XS Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone X-Xs Space Gray.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 41.1, 45, 1125, 2436);
                         break;
                     case 'iPhone Xs Max Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 42.1, 45.5, 1242, 2688);
                         break;
                     case 'iPhone Xs Max Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 42.1, 45.5, 1242, 2688);
                         break;
                     case 'iPhone Xs Max Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone Xs Max Space Gray.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 42.1, 45.5, 1242, 2688);
                         break;
                     case 'iPhone XR Black':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Black.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Black.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone XR Blue':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Blue.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Blue.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone XR Coral':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Coral.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Coral.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone XR Red':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Red.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Red.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone XR White':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR White.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR White.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone XR Yellow':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Yellow.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone XR Yellow.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 43, 42, 828, 1792);
                         break;
                     case 'iPhone SE Rose Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone SE Rose Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone SE Rose Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Rose Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Rose Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Rose Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Black':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Black.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Black.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Jet Black':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Jet Black.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Jet Black.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Plus Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Plus Rose Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Rose Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Rose Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Plus Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Plus Black':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Black.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Black.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 7 & 8 Plus Jet Black':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Jet Black.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 7-8 Plus Jet Black.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Rose Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Rose Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Rose Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Space Gray.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Plus Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Plus Rose Gold':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Rose Gold.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Rose Gold.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Plus Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 6 & 6s Plus Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPhone/SVG/iPhone 6-6s Plus Space Gray.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'MacBook Pro TouchBar 15" Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/MacBook/SVG/MacBook Pro TouchBar 15 inches Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/MacBook/SVG/MacBook Pro TouchBar 15 inches Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'MacBook Pro TouchBar 15" Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/MacBook/SVG/MacBook Pro TouchBar 15 inches Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/MacBook/SVG/MacBook Pro TouchBar 15 inches Space Gray.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iMac 27"':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iMac/SVG/iMac 27 inches.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iMac/SVG/iMac 27 inches.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'Apple Watch 38mm':
-                        svgURL = 'app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 38mm.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 38mm.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'Apple Watch 40mm':
-                        svgURL = 'app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 40mm.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 40mm.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 54, 54, 323, 393);
                         break;
                     case 'Apple Watch 42mm':
-                        svgURL = 'app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 42mm.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 42mm.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'Apple Watch 44mm':
-                        svgURL = 'app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 44mm.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/Apple Watch/SVG/Apple Watch 44mm.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 60, 60, 369, 447);
                         break;
                     case 'iPad Pro 2017 12.9" Silver':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPad/SVG/iPad Pro 12.9 Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPad/SVG/iPad Pro 12.9 Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPad Pro 2017 12.9" Space Gray':
-                        svgURL = 'app/iMockup/mockups/pommePlate/iPad/SVG/iPad Pro 12.9 Space Gray.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/pommePlate/iPad/SVG/iPad Pro 12.9 Space Gray.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                 }
@@ -403,35 +402,35 @@ class IMockup {
             case MockType.real:
                 switch (this.model) {
                     case 'iPhone 8 Gold':
-                        svgURL = 'app/iMockup/mockups/real/iPhone/IPhone8.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPhone/IPhone8.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone 8 Plus Gold':
-                        svgURL = 'app/iMockup/mockups/real/iPhone/IPhone8Plus.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPhone/IPhone8Plus.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPhone X Silver':
-                        svgURL = 'app/iMockup/mockups/real/iPhone/iPhoneX_fix.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPhone/iPhoneX_fix.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 24, 23, 312, 677);
                         break;
                     case 'iPhone 11 Pro Midnight Green':
-                        svgURL = 'app/iMockup/mockups/real/iPhone/IPhone_11_Pro_Midnight_Green_fix.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPhone/IPhone_11_Pro_Midnight_Green_fix.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 24, 23, 312, 677);
                         break;
                     case 'Apple Watch S3 42mm':
-                        svgURL = 'app/iMockup/mockups/real/Apple Watch/Apple Watch S3-42mm.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/Apple Watch/Apple Watch S3-42mm.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 182, 250, 235, 295);
                         break;
                     case  'MacBook Pro 16" Silver':
-                        svgURL = 'app/iMockup/mockups/real/MacBook/MacBook Pro 16 Silver.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/MacBook/MacBook Pro 16 Silver.svg';
                         this.svgModel_2(body, svgURL, imgURL, this.screenColor);
                         break;
                     case 'iPad Pro 2018 11"':
-                        svgURL = 'app/iMockup/mockups/real/iPad/iPad Pro 2018 11 inches.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPad/iPad Pro 2018 11 inches.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 70, 65, 626, 895);
                         break;
                     case 'iPad Pro 2018 12.9"':
-                        svgURL = 'app/iMockup/mockups/real/iPad/iPad Pro 2018 12.9 inches.svg';
+                        svgURL = 'https://zhaimick.github.io/superShortcut/app/iMockup/mockups/real/iPad/iPad Pro 2018 12.9 inches.svg';
                         this.svgModel_1(body, svgURL, imgURL, this.screenColor, 65, 88, 636, 849);
                         break;
                 }
