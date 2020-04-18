@@ -60,6 +60,7 @@ $('main').append('<h3 class="translate" data-tid="normal-setting"></h3>\n' +
 /**
  * language setting
  * */
+let nowLan = 'zh';
 let supportedLanguages = ['zh', 'en'];
 let textLib = {
     'normal-setting': {
@@ -90,9 +91,9 @@ let textLib = {
         "zh": "螢幕顏色: ",
         "en": "Screen color select: "
     },
-    'iMockup-screen-color-tip':{
-        "zh":'照片可能無法完全貼合螢幕，設定不符合邊框的顏色將更明顯！',
-        'en':'Picture may not match screen.<br> If screen color not match border will be more obvious.'
+    'iMockup-screen-color-tip': {
+        "zh": '照片可能無法完全貼合螢幕，設定不符合邊框的顏色將更明顯！',
+        'en': 'Picture may not match screen.<br> If screen color not match border will be more obvious.'
     },
     'iMockup-download-size': {
         "zh": "最大邊長尺寸: ",
@@ -106,9 +107,17 @@ let textLib = {
         "zh": "產生圖片",
         "en": "Generate picture"
     },
-    'iMockup-generate-picture-tip':{
+    'iMockup-generate-picture-tip': {
         "zh": "～在下一個畫面，長按圖片下載～",
         "en": "In next page, long click image to download picture."
+    },
+    'page-reload': {
+        'zh': '重新設定',
+        'en': 'Resetting'
+    },
+    'image-download-tip': {
+        'zh': '長按圖片下載',
+        'en': 'Long click image to download picture.'
     }
 };
 let $selectLan = $('#lanSelect');
@@ -118,6 +127,7 @@ supportedLanguages.forEach(function (language) {
     $selectLan.append($opt);
 });
 $selectLan.on('change', function () {
+    nowLan = $selectLan.val();
     fillLan();
 });
 let fillLan = function () {
@@ -163,6 +173,7 @@ function setModel() {
     });
     mockup()
 }
+
 function mockup() {
     iMockup.setScreenColor('' + $('#iMockupScreenColor').val())
         .setDevice(
@@ -175,15 +186,16 @@ function mockup() {
             imgBase64URL
         );
 }
+
 setModel();
 
-$('.updateModel').on('change',function () {
+$('.updateModel').on('change', function () {
     setModel();
 });
-$('.mockup').on('change',function () {
+$('.mockup').on('change', function () {
     mockup();
 });
-$('#downloadImage').on('click',function () {
+$('#downloadImage').on('click', function () {
     svg2png(
         document.getElementById('iMockupSVG'),
         $('#iMockupDownloadSize').val(),
@@ -195,11 +207,9 @@ $('#downloadImage').on('click',function () {
             // link.click();
             // document.body.removeChild(link);
 
-            let iframe =
-                "<header><title>iMockup Preview</title></header>" +
-                "<body><div style='height: 100%;width: 100%; overflow: auto; display: flex;justify-content: center;'><img src='" + url+"' alt='iMockup' style='height: 350px;'></div></body>";
-            let x = window.open();
-            x.document.open();
-            x.document.write(iframe);
+            $('main').html('' +
+                '<button onclick="window.location.reload();"  style="width: calc(100% - 30px); border-radius: 5px; outline: none; margin: 15px;font-weight: bold">' + textLib['page-reload'][nowLan] + '</button>' +
+                '<h5>' +textLib['image-download-tip'][nowLan]+ '</h5>' +
+                '<img style="width: 100%;" src="' + url + '" alt="iMockup">');
         })
 });
