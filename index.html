@@ -95,8 +95,10 @@
 <div id="outerdiv"
      style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:1000;width:100%;height:100%;display:none;">
     <div id="innerdiv"
-         style="width:100%; height:100%;position:absolute; display: flex;justify-content: center;align-items: center">
-        <img id="bigimg" src="" alt=""/>
+         style="width:100%; height:100%;position:absolute; display: flex;justify-content: center;align-items: center;">
+        <div style="margin: 10px; overflow: auto;">
+            <img id="bigimg" src="" alt=""/>
+        </div>
     </div>
 </div>
 </body>
@@ -114,12 +116,18 @@
             image: 'src/img/iMark icon.png',
             link: 'https://www.icloud.com/shortcuts/9724c16f8423487bb84fe68bba1a4bf7',
             view_img: ["src/img/iMark (1).png", "src/img/iMark (2).png"]
+        },
+        {
+            name: 'iMockup',
+            image: 'src/img/iMockup icon.png',
+            link: 'https://www.icloud.com/shortcuts/0d2943a93ff941b086181e562c3a2bca',
+            view_img: ["src/img/iMockup (0).png","src/img/iMockup (1).png", "src/img/iMockup (2).png"]
         }
     ];
     let $main = $('main');
     let $div = $('<div style="display:grid; grid-template-columns: repeat(4, 1fr); margin: 10px 0"/>');
     shortcuts.forEach(function (obj, i) {
-        $div.append('<div style="display: flex;justify-content: center;margin: 5px;"><img src="' + obj.image + '" alt="shortcut icon" width="50px"></div>');
+        $div.append('<div style="display: flex;justify-content: center;margin: 5px;"><img src="' + obj.image + '" alt="shortcut icon" width="50px" height="50px"></div>');
         $div.append('<div style="display: flex;align-items: center"><b>' + obj.name + '</b></div>');
         $div.append('<div style="display: flex;align-items: center"><a href="' + obj.link + '">Download link</a> </div>');
         $div.append('<div style="display: flex;align-items: center;justify-content: center;"><img src="src/img/showMore.svg" alt="show more" width="40px" data-index="' + i + '" class="showMore"></div>');
