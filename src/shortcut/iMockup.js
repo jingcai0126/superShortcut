@@ -54,8 +54,9 @@ $('main').append('<h3 class="translate" data-tid="normal-setting"></h3>\n' +
     '    </div>\n' +
     '    <div class="labelGroup">\n' +
     '        <button id="downloadImage" class="translate" data-tid="download-image"\n' +
-    '                style="width: calc(100% - 30px); border-radius: 5px; outline: none; margin: 15px"></button>\n' +
-    '    </div>');
+    '                style="width: calc(100% - 30px); border-radius: 5px; outline: none; margin: 0 15px;"></button>\n' +
+    '    </div>' +
+    '    <h5 class="translate tip" data-tid="iMockup-generate-picture-tip"></h5>\n');
 /**
  * language setting
  * */
@@ -102,9 +103,13 @@ let textLib = {
         "en": "iMockup preview: "
     },
     'download-image': {
-        "zh": "下載圖片",
-        "en": "Download image"
+        "zh": "產生圖片",
+        "en": "Generate picture"
     },
+    'iMockup-generate-picture-tip':{
+        "zh": "～在下一個畫面，長按圖片下載～",
+        "en": "In next page, long click image to download picture."
+    }
 };
 let $selectLan = $('#lanSelect');
 supportedLanguages.forEach(function (language) {
@@ -183,11 +188,18 @@ $('#downloadImage').on('click',function () {
         document.getElementById('iMockupSVG'),
         $('#iMockupDownloadSize').val(),
         function (url) {
-            let link = document.createElement('a');
-            link.href = url;
-            link.download = 'iMockup.png';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // let link = document.createElement('a');
+            // link.href = url;
+            // link.download = 'iMockup.png';
+            // document.body.appendChild(link);
+            // link.click();
+            // document.body.removeChild(link);
+
+            let iframe =
+                "<header><title>iMockup Preview</title></header>" +
+                "<body><div style='height: 100%;width: 100%; overflow: auto; display: flex;justify-content: center;'><img src='" + url+"' alt='iMockup' style='height: 350px;'></div></body>";
+            let x = window.open();
+            x.document.open();
+            x.document.write(iframe);
         })
 });
