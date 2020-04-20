@@ -122,7 +122,7 @@ class IMark {
                 slogan = 'Apple Pro Camera System';
                 break;
             case this.devices[17]:
-                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Single lens se 2020.svg';
+                markURL = 'https://zhaimick.github.io/superShortcut/app/iMark/marks/Single lens se 2.svg';
                 break;
             default:
                 throw 'Not find device';
